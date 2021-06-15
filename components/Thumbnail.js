@@ -13,11 +13,11 @@ const Thumbnail = forwardRef(({ result }, ref) => {
     >
       <Image layout='responsive' src={imagePath} height={1080} width={1920} />
       <div className='p-2'>
-        <p className='truncate max-w-md'>{result.overview}</p>
-        <h2 className='mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold'>
+        <p className='truncate max-w-md sm:px-20'>{result.overview}</p>
+        <h2 className='mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold sm:px-20'>
           {result.title || result.original_name}
         </h2>
-        <p className='px-10 flex items-center opacity-0 group-hover:opacity-100'>
+        <p className='flex items-center opacity-0 group-hover:opacity-100 sm:px-20'>
           {result.media_type && `${result.media_type} *`}{' '}
           {result.release_date || result.first_air_date} *{' '}
           <ThumbUpIcon className='h-5 mx-2' />
